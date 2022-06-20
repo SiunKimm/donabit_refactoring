@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.donabit.demo.dto.ChallengeDTO2" alias="ChallengeDTO2"/>
+		<typeAlias type="com.donabit.demo.dto.ChallengeDTO" alias="challengedto"/>
+		<typeAlias type="com.donabit.demo.dto.CheckDTO" alias="checkdto"/>
+		<typeAlias type="com.donabit.demo.dto.MemberDTO" alias="memberdto"/>
+		<typeAlias type="com.donabit.demo.dto.BoardDTO" alias="boarddto"/>
+		<typeAlias type="com.donabit.demo.dto.ChallengingDTO" alias="challengingdto"/>
+		<typeAlias type="com.donabit.demo.dto.ReportDTO" alias="reportdto"/>
+	</typeAliases>
+</configuration>
+

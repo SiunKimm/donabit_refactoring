@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+
+/*업로드폼*/
+.check_container{
+	width: 450px;
+    height: 300px;
+/*  position: absolute;
+	left: 40%; */
+	display: table;
+}
+
+
+.check {
+    display: table-row;
+}
+
+
+.check_label, .check_input {
+    display: table-cell;
+    border-bottom: 1px solid lightgray;
+    padding: 1em 1em 1em 0.5em;
+    vertical-align: top;
+}
+
+
+
+textarea {
+    width: 22em;
+    height: 5em;
+    resize: none;
+}
+
+
+.upload_btn {
+    background-color: #2AC1BC;
+    color: white;
+    padding: 0.8em 1.6em;
+    margin: 2em 1em;
+    border-radius: 0.5em;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(176, 176, 176);
+    position: absolute;
+	left: 40%;
+  opacity: 1.0;
+}
+
+.upload_btn:hover {
+     opacity: 0.8;
+}
+
+#uploadImage {
+	display: inline-block;
+	background-color: whitesmoke;
+	width: 8em;
+	height: 8em;
+}
+
+
+/*업로드리스트*/
+.rainbow1 {
+	display: inline-block;
+	font-size:1.5em;
+}
+
+.rainbow2{
+	transform: scaleX(-1);
+	display: inline-block;
+	font-size:1.5em;
+}
+
+.betweenrainbow{
+	display: inline-block;
+	font-size:1.5em;
+}
+.chname{
+	text-align: center;
+	color: #2AC1BC;
+	font-size:40px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.chnamebox{
+	display: inline-block;
+}
+
+
+
+.checktitle {
+    width: 100%;
+ 
+}
+
+.listcontainerout{
+	width: 1370px;
+	margin: auto;
+}
+
+.listcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: start;
+	align-content: flex-start
+}
+
+
+
+.item {
+	border-radius: 10px;
+	width: 300px;
+	height: 470px;
+	margin: 20px;
+	position: relative;
+	border: solid #BDBDBD 1px;
+	box-shadow: 3px 8px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+	background-image: url('../img/challenge/back2.svg');
+}
+
+.img{
+	 text-align:center;
+	 margin: 40px 0px 0px 0px;
+}
+
+.imgin{
+	height : 300px; 
+	width : 100%;
+	
+}
+
+.detail {
+	align-items: center;
+	position:relative;
+	height: 120px;
+}
+
+.detail_first, .detail_second{
+	 margin:10px 10px 10px 10px;
+}
+
+
+.delete_btn{
+	position: absolute;
+  	top: 2%;
+  	left: 90%;
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+.delete_btn:hover{
+	border: 0;
+	outline: 0;
+	opacity: 0.5;
+}
+
+
+
+.plus_btn{
+position: absolute;
+  top: 45%;
+  left: 50%;
+ margin: -50px 0 0 -50px;
+  opacity: 1.0;
+	
+}
+
+.plus_btn:hover{
+	 opacity: 0.8;
+	
+}
+
+
+/* main {
+	height: 1200px;
+	
+} */

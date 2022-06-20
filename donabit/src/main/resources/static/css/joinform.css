@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.container {  	  
+   display: flex;
+   width: 1160px;
+   margin: 0 auto;
+   padding-top:100px;
+   align-items: center;
+   justify-content: center;
+}
+
+
+div {
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+
+input{
+    border: 1px solid darkgray;
+    line-height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.emailtitle, .nicknametitle, .passwordtitle, .phonetitle, .avatartitle {
+	font-weight: bold;	
+}
+
+.email input {
+	width: 30%;
+}
+
+.email select{
+	width: 20%;
+}
+
+.email button {
+	width: 94%;
+	margin-top: 10px;
+}
+
+.nickname {
+	margin-top: 30px;
+}
+
+.nickname input {
+    width: 73%;
+}
+
+
+.password {
+	margin-top: 30px;
+}	
+
+#password {
+    width: 90%;
+}
+
+#password2 {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.phone{
+	margin-top: 30px;
+}
+
+.phone input{
+	width: 90%;
+}
+
+.email select{
+	padding:7px; 
+	vertical-align:middle
+}
+
+.avatarbox{
+	margin-top: 30px;
+}
+
+
+
+.btn-gradient {
+	background-color: #2AC1BC;
+	padding: 8px 18px;  
+  	font-size: 14px;
+  	opacity: 1.0;
+  	border: 1px solid #2AC1BC;
+}
+
+.btn-gradient:hover{
+	opacity: 0.8;
+}
+
+.buttons-wrapper {
+	margin: 0 auto;
+	width: 230px;
+}
+
+.buttons-left {
+	width:100px;
+	height:50px;
+	float: left;	
+	margin: auto;
+}
+
+.buttons-right{
+	width:100px;
+	height:50px;
+	display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.btn_submit, .btn_cancel {
+	background-color: #2AC1BC;
+	padding: 8px 18px;  
+  	font-size: 14px;
+  	opacity: 1.0;
+  	border: 1px solid #2AC1BC;
+}
+
+.btn_submit:hover {
+	opacity: 0.8;
+}
+
+.btn_cancel:hover {
+  	opacity: 0.8;
+}

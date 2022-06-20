@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.donabit.demo.dao.CheckDAO">
+	<select id="checklist" resultType="checkdto" parameterType="String">
+		SELECT checkid, checktitle, checkdesc, checkimg AS checkimg2, checktime FROM checks WHERE nickname LIKE #{nickname} AND chnum=#{chnum} ORDER BY checktime DESC; 
+	</select>
+	
+	<insert id="insertCheck" parameterType="checkdto">
+		INSERT INTO checks(nickname, chnum, checknum, checktime, checktitle, checkdesc, checkimg)
+		VALUES(#{nickname}, #{chnum}, #{checknum}, now(), #{checktitle}, #{checkdesc}, #{checkimg2})  
+	</insert>
+	
+	<select id="selectcountcheck" resultType="int" parameterType="String"> 
+		SELECT count(*) FROM checks WHERE nickname LIKE #{nickname} AND chnum=#{chnum};
+	</select>
+	
+	<select id="selectchsuccess" resultType="int" parameterType="String">
+		SELECT chsuccess FROM challenge WHERE chnum=#{chnum};
+	</select>
+	
+	<update id="updatepersonalpf" parameterType="String">
+		UPDATE challenging SET personalpf=1 WHERE chnum=#{chnum};
+	</update>
+	
+	<select id="selectchecktime" resultType="int" parameterType="String"> 
+		SELECT COUNT(*) FROM checks WHERE nickname LIKE #{nickname} AND DATE(checktime)=DATE(now()) AND chnum=#{chnum};
+	</select>
+	
+	<!-- 인증글 삭제 -->
+	<delete id="deletetoggle" parameterType="int">
+	    DELETE FROM toggle WHERE checkid = #{checkid};
+	</delete>
+	<delete id="deletecheck" parameterType="int">
+		DELETE FROM checks WHERE checkid = #{checkid};
+	</delete>
+	
+	<!-- mypage 참여중인 챌린지 -->
+	<select id="mypagenicknameconn" resultType="int" parameterType="String">
+		SELECT chnum FROM checks WHERE nickname LIKE #{nickname};
+	</select>
+	<select id="mypagechnumconn" resultType="challengedto" parameterType="int">
+		SELECT chimg, chedate FROM challenge WHERE chnum=#{chnum};
+	</select>	
+	
+	<select id="mypagecheck" resultType="challengedto" parameterType="String">
+		SELECT challenging.chnum, chname, chedate, chimg, challenging.personalpf FROM challenge JOIN challenging ON challenge.chnum=challenging.chnum WHERE personalpf = 0 AND challenging.nickname LIKE #{nickname} AND (challenge.nickname NOT LIKE #{nickname} OR challenge.nickname IS NULL) group by chnum;
+	</select>
+	
+	<!-- mypage 개설한 챌린지 -->
+	<select id="mypagempcnicknameconn" resultType="int" parameterType="String">
+		SELECT chnum FROM challenge WHERE nickname LIKE #{nickname};
+	</select>
+	<select id="mypagempcchnumconn" resultType="challengedto" parameterType="int">
+		SELECT chimg, chedate FROM challenge WHERE chnum=#{chnum};
+	</select>	
+	
+	<select id="mypagempccheck" resultType="challengedto" parameterType="String">
+		SELECT challenge.chnum, chname, chedate, chimg From challenge WHERE challenge.nickname LIKE #{nickname};
+	</select>
+	
+	<!-- 챌린지 개설하면 자동으로 참여됨 -->
+	<select id="selectMaxchnum" resultType="int" parameterType="String">
+		SELECT max(chnum) AS chnum FROM challenge WHERE nickname LIKE #{nickname};
+	</select>
+	
+
+	
+</mapper>

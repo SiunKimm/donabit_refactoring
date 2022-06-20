@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+.container {
+	-webkit-animation: color-change-3x 10s linear infinite alternate both;
+	animation: color-change-3x 10s linear infinite alternate both;
+	display: grid;
+	grid-template-columns: 200px 400px 450px 200px;
+	grid-template-rows: 50px 400px 200px auto auto auto;
+	gap: 0px 0px;
+	grid-auto-flow: row dense;
+	justify-content: center;
+	justify-items: stretch;
+	grid-template-areas:
+		".head head ."
+		". img info ."
+		". slide slide ."
+		". description description ."
+		". button button ."
+		". footer footer .";
+}
+
+.head {
+	width: 850px;
+	height: 160px;
+	margin-top: 20px;
+	grid-area: head;
+	background-image: url('../img/challenge/detailtitle.svg');
+	grid-area: head;
+}
+
+.img {
+	grid-area: img;
+}
+
+.imgin {
+	border-radius: 5px;
+}
+
+.info {
+	grid-area: info;
+	position: relative;
+
+}
+
+.infoimg {
+	margin-left: 20px;
+	width: 430px;
+	height: 400px;
+	background: #b6edeb;
+}
+
+
+.infotitle1 {
+	position: absolute;
+	left: 65px;
+	top: 80px;
+	font-size: 17px;
+}
+
+.infotitle2 {
+	position: absolute;
+	left: 65px;
+	top: 110px;
+	font-size: 17px;
+}
+
+.infotitle3 {
+	position: absolute;
+	left: 65px;
+	top: 140px;
+	font-size: 17px;
+}
+
+.infotitle4 {
+	position: absolute;
+	left: 65px;
+	top: 170px;
+	font-size: 17px;
+}
+
+.infotitle5 {
+	position: absolute;
+	left: 65px;
+	top: 200px;
+	font-size: 17px;
+}
+
+.infotitle6 {
+	position: absolute;
+	left: 65px;
+	top: 230px;
+	font-size: 17px;
+}
+
+.infotitle7 {
+	position: absolute;
+	left: 65px;
+	top: 260px;
+	font-size: 17px;
+}
+
+.infotitle8 {
+	position: absolute;
+	left: 65px;
+	top: 290px;
+	font-size: 17px;
+}
+
+
+#text1 {
+	position: absolute;
+	left: 50px;
+	top: 25px;
+	font-size: 25px;
+}
+
+#text2 {
+	position: absolute;
+	left: 160px;
+	top: 230px;
+	font-size: 17px;
+}
+
+#text2-1 {
+	position: absolute;
+	left: 71px;
+	top: 5px;
+	width: 135px;
+	font-size: 17px;
+}
+
+#text3 {
+	position: absolute;
+	left: 160px;
+	top: 80px;
+	font-size: 17px;
+}
+
+#text4 {
+	position: absolute;
+	left: 160px;
+	top: 110px;
+	font-size: 17px;
+}
+
+
+#recruitdiv {
+	position: absolute;
+	left: 160px;
+	top: 140px;
+	font-size: 17px;
+}
+
+#divprog {
+	position: absolute;
+	left: 230px;
+	top: 135px;
+	width: 150px;
+	font-size: 17px;
+}
+
+#text5 {
+	position: absolute;
+	left: 160px;
+	top: 200px;
+	font-size: 17px;
+}
+
+#text6 {
+	position: absolute;
+	left: 160px;
+	top: 170px;
+	font-size: 17px;
+}
+
+#text8 {
+	position: absolute;
+	left: 160px;
+	top: 260px;
+	font-size: 17px;
+}
+
+#text9 {
+	position: absolute;
+	left: 160px;
+	top: 290px;
+	font-size: 17px;
+}
+
+.slide {
+	grid-area: slide;
+}
+
+.description {
+	grid-area: description;
+	position: relative;
+
+}
+
+.descriptionin {
+	grid-area: description;
+	margin: 20px 0px 10px 0px;
+	background: #b6edeb;
+	padding: 30px 30px 30px 30px;
+
+}
+
+.description2 {
+	background-image: url('../img/challenge/detail2.png');
+	background-size: 850px;
+	width: 850px;
+	height: 1900px;
+	margin: 10px 0px 100px 0px;
+	object-fit: cover;
+}
+
+.button {
+	position: absolute;
+	left: 1110px;
+	top: 590px;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+/*버튼*/
+#participate {
+	position: absolute;
+	left: 180px;
+	top: 340px;
+}
+
+#participatebtn {
+	background: #2bc1bc;
+	/*글자색*/
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 30px;
+	font-size: 20px;
+	padding: 0 10px;
+	cursor: pointer;
+	transition: 400ms ease all;
+	outline: none;
+	text-shadow: 0.5px 0.5px 0.5px rgb(59, 59, 59);
+}
+
+#participatebtn:hover {
+	background: #fff;
+	color: #2bc1bc;
+}
+
+#participatebtn:before,
+#participatebtn:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #2bc1bc;
+	transition: 400ms ease all;
+}
+
+#participatebtn:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+/*버튼*/
+#participatebtnx {
+	background: #2bc1bc;
+	/*글자색*/
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 30px;
+	font-size: 20px;
+	padding: 0 10px;
+	cursor: pointer;
+	transition: 400ms ease all;
+	outline: none;
+	text-shadow: 0.5px 0.5px 0.5px rgb(59, 59, 59);
+}
+
+#participatebtnx:hover {
+	background: #fff;
+	color: #2bc1bc;
+}
+
+#participatebtnx:before,
+#participatebtnx:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #2bc1bc;
+	transition: 400ms ease all;
+}
+
+#participatebtnx:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+/*버튼*/
+#cancelbtn {
+	background: #2bc1bc;
+	/*글자색*/
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 30px;
+	font-size: 20px;
+	padding: 0 10px;
+	cursor: pointer;
+	transition: 400ms ease all;
+	outline: none;
+	text-shadow: 0.5px 0.5px 0.5px rgb(59, 59, 59);
+}
+
+#cancelbtn:hover {
+	background: #fff;
+	color: #2bc1bc;
+}
+
+#cancelbtn:before,
+#cancelbtn:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #2bc1bc;
+	transition: 400ms ease all;
+}
+
+#cancelbtn:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+/*버튼*/
+#login {
+	background: #2bc1bc;
+	/*글자색*/
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 30px;
+	font-size: 20px;
+	padding: 0 10px;
+	cursor: pointer;
+	transition: 400ms ease all;
+	outline: none;
+	text-shadow: 0.5px 0.5px 0.5px rgb(59, 59, 59);
+}
+
+#login:hover {
+	background: #fff;
+	color: #2bc1bc;
+}
+
+#login:before,
+#login:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #2bc1bc;
+	transition: 400ms ease all;
+}
+
+#login:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+/*progress bar*/
+progress {
+	width: 90%;
+	height: 10px;
+	appearance: none;
+}
+
+progress::-webkit-progress-bar {
+	background: #f0f0f0;
+	border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+	border-radius: 4px;
+	background: #484a4c;
+}
+
+
+/*커뮤니티 사진 가져오기*/
+
+.chcommu-info {
+	margin: var(--main-contents-margin) auto;
+	max-width: var(--global-max-width);
+}
+
+.chcommu_header {
+	font-size: 1em;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+.chcommu_container {
+	display: grid;
+	margin-left: 0.8em;
+	gap: 2em;
+	grid-template-rows: repeat(2, 300px);
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-flow: row dense;
+	grid-auto-rows: 100px;
+	justify-content: center;
+	align-content: center;
+	justify-items: stretch;
+	align-items: stretch;
+	grid-template-areas:
+		"chcommu-img chcommu-img chcommu-img chcommu-img";
+}
+
+.chcommu-img {
+	grid-area: chcommu-img;
+	border-radius: 2%;
+}
+
+.chcommu_detailinfo {
+	font-size: 0.8em;
+	padding: 0.2em 0;
+
+}
+
+
+#challenge1 {
+	width: 100%;
+}

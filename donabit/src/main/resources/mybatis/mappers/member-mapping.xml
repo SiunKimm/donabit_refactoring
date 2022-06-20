@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.donabit.demo.dao.MemberDAO" >
+
+
+<insert id="insertmember" parameterType="memberdto">
+insert into donabit.member(email, nickname, password, phone, enabled, avatar)
+values(#{email}, #{nickname}, #{password}, #{phone}, 1, #{avatar} )
+</insert>
+
+
+<update id="updatemember" parameterType="memberdto">
+update donabit.member
+set phone=#{phone}, nickname=#{nickname}, avatar=#{avatar}
+where email=#{email}
+</update>
+
+<select id="pwcheck" resultType="String">
+select password from donabit.member where email = #{email}
+</select>
+
+
+<update id="passwordmodify" parameterType="memberdto">
+update donabit.member
+set password=#{password}
+where email=#{email}
+</update>
+
+
+<delete id="deletemember">
+delete from donabit.member where email=#{email};
+</delete> 
+
+
+<select id="findByUsername" parameterType="String" resultType="memberdto">
+select * from donabit.member where email=#{email};
+</select>
+
+
+<!-- 이메일 중복 체크 -->
+<select id="emailchk" resultType="int">
+  SELECT COUNT(*) FROM donabit.member
+  WHERE email = #{email}
+</select>
+
+<!-- 닉네임 중복 체크 -->
+<select id="nickchk" resultType="int">
+  SELECT COUNT(*) FROM donabit.member
+  WHERE nickname = #{nickname}
+</select>
+ 
+
+
+
+
+</mapper>
+
+
+
+
+
+

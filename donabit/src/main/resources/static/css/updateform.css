@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.wrapper {
+	position : absolute;
+	left:25%; 
+	top:25%;
+	margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+	width: 45%;  
+}
+
+div {
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+
+
+input{
+	
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.email input {
+	width: 100%;
+}
+
+.nickname input {
+    width: 85%;
+}
+
+.password input {
+    width: 100%;
+}
+
+.phone input{
+	width: 100%;
+}
+
+
+
+.btn-gradient {
+	background-color: #2AC1BC;
+	padding: 8px 18px;  
+  	font-size: 14px;
+  	opacity: 1.0;
+  	border: 1px solid #2AC1BC;
+}
+
+.btn-gradient:hover{
+	opacity: 0.8;
+}
+
+.buttons-wrapper {
+	margin: 0 auto;
+	width:260px;
+}
+
+.buttons-left {
+	width:100px;
+	height:50px;
+	float: left;	
+	margin-left:50px;
+}
+
+.buttons-right{
+	width:100px;
+	height:50px;	
+	display: inline-block;
+}
+
+
+
+.wrapper hr {
+	color: darkgray;
+}
+
+h1, h5, p{
+	color: #2AC1BC;
+
+}

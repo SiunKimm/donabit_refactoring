@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+.titleArea h2 {
+    position: relative;
+    float: none !important;
+    text-align: center;
+    margin-top: 20px;
+    padding: 7px 50px 7px;
+    line-height: 24px;
+    font-family: 'NanumSquareBold','나눔고딕','Nanum Gothic',sans-serif;
+    font-size: 22px;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    background: none !important;
+}
+
+.ptitle h1 {
+  font-size: 14px;
+  color: darkgray;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.notice {
+	left:25%; 
+	margin: 0 auto;
+   	height:800px;   
+	width: 60%;
+  
+}
+
+.wrapper {
+	margin: 0 auto;	
+}
+
+
+
+
+.ptitle {
+  margin-bottom: 20px;
+}
+
+
+.btitle,
+.bwriter,
+.binfo {
+	padding: 10px;
+}
+
+.btitle{
+	border-top : 1px solid darkgray;
+}
+
+.bwriter{
+	border-top : 1px solid darkgray;
+}
+
+.binfo {
+	border-top : 1px solid darkgray;
+	border-bottom : 1px solid darkgray;
+	font-size: 0;
+}
+
+.bcontents{
+	border-bottom : 1px solid darkgray;
+}
+
+.bcontents textarea {
+	display: block;
+	width : 100%;
+	height : 200px;
+	padding : 30px;
+	box-sizing : border-box;
+	border : 0;
+	resize: vertical;
+}
+
+.btitle dt,
+.btitle dd,
+.bwriter dt,
+.bwriter dd,
+.binfo dt,
+.binfo dd{
+	display: inline-block;
+	vertical-align:middle;
+	font-size: 14px;
+}
+
+.binfo dl {
+	display: inline-block;
+	width:50%;
+	vertical-align:middle;
+}
+
+.btitle dl,
+.bwriter dl {
+	font-size: 0;
+}
+
+.btitle dt,
+.bwriter dt {
+	width: 50px;
+}
+
+.binfo dt{
+	width: 50px;
+}
+
+.btitle dd,
+.bwriter dd {
+	width: calc(100%-50px);	
+}
+
+.btitle input,
+.bwriter input {
+	width: 90%;
+}
+
+.binfo input {
+	width: 75%;
+}
+
+.btitle input,
+.bwriter input,
+.binfo input {
+	height: 30px;
+}
+
+
+.tname {
+  color: darkgray;
+  font-weight: bold;
+}
+
+div {
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+
+
+input {	
+    border: 1px white;
+    border-radius: 1px;
+    line-height: 1px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.btn-gradient { 
+	
+	text-decoration: none;
+	color: white;
+	padding: 10px 30px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom: 4px solid rgba(0,0,0,0.21);
+	border-radius: 4px;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+	background-color: #2AC1BC;
+	padding: 8px 18px;  
+  	font-size: 14px;
+  	opacity: 1.0;
+  	border: 1px solid #2AC1BC;
+}
+
+.btn-gradient:hover{
+	opacity: 0.8;
+}
+
+
+
+.btn-gradient.small {
+	
+	padding: 8px 18px;  
+  	font-size: 14px;
+}
+
+.btn-gradient.mini {
+	padding: 4px 12px;  
+  	font-size: 12px;
+}
+
+
+.buttons-wrapper {
+	padding-top:20px;
+	padding-bottom:20px;
+	margin: 0 auto;
+	width: 230px;
+	height: 50px;
+}
+
+.buttons-left {
+	width:100px;
+	height:50px;
+	float: left;	
+	margin: 0 10px;
+}
+
+.buttons-right{
+	width:100px;
+	height:50px;
+	display: inline-block;
+    margin-left: 10px;
+    
+}
